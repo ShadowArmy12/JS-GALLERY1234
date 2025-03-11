@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sigmar&display=swap');
+  </style>
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+  <!-- Custom Styles -->
+  <style type="text/css" media="all">
+    /*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">*/
+
+body {
+    font-size: 15pt;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+   color:#fff;
+
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  background: #000000;
+
+  display: flex;
+  flex-direction:column;
+  
+
+
+}
+
+.nav{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  z-index: 5;
+color:#fff;
+}
+.btn{
+  width: 98%;
+  height: 90%;
+  border-radius: 15px;
+  border:1.5px solid #8B95AA;
+  font-size: 38px;
+ 
+  background:#000000;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Sigmar", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+/*text-shadow: 1px 1px 4px #aaa;*/
+  box-shadow: 0.009rem 0.009rem 0.22rem 0.001rem #00000024,-0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+
+
+
+}
+.body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+  
+}
+.video{
+  width: 96%;
+  height: auto;
+  background: #000000;
+  display: flex;
+  padding-top: 1.5px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  border:1.2px solid #8B95AA;
+  align-items: center;
+  justify-content:center;
+ 
+  border-radius:8px;
+  margin:11px 0;
+   box-shadow: 0.009rem 0.009rem 0.22rem 0.001rem #00000024,-0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+
+}
+.title{
+  width: 98.3%;
+  height: 50px;
+    background:#000000;
+
+  border-radius:2px 2px 6px 6px;
+  margin-top: ;
+  display: flex;
+  flex-direction: bottom;
+  justify-content: space-between;
+  align-items: center;
+  color:#000;
+  box-shadow: inset 0.009rem 0.009rem 0.22rem 0.001rem #00000024,inset -0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+
+  /*display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;*/
+}
+p{
+  margin: 8px;
+  font-family: "Sigmar", serif;
+  font-weight: 300;
+  font-style: normal;
+color:#fff;
+}
+/*.vc{
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+video{
+
+    width: 99.1%;
+
+  border-radius:6px 6px 2px 2px;
+  border:1.1px solid #8B95AA;
+}
+img{
+  width: 100%;
+  border-radius:6px 6px 2px 2px;
+  
+}
+.vc{
+  width: 100%;
+  height:auto;
+  position: relative;
+  
+}
+/*video{
+  width: 100%;
+
+  
+}*/
+.icon{
+  width: 30%;
+  height: 85%;
+  border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+  display: flex;
+  border:1.2px solid #8B95AA;
+
+  align-items: center;
+  justify-content:center;
+  box-shadow: 0.009rem 0.009rem 0.22rem 0.001rem #00000024,-0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+
+}
+
+.t{
+  width: 35%;
+  height: 85%;
+    border-radius: 0.2rem 0.2rem 0.2rem 0.48rem;
+margin-left:;
+display: flex;
+align-items: center;
+justify-content: center ;
+  box-shadow: 0.009rem 0.009rem 0.22rem 0.001rem #00000024,-0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+  border:1.2px solid #8B95AA;
+
+}
+m{
+  color:#0D770F;
+  
+}
+.btn2{
+  border-radius: 0.2rem 0.2rem 0.48rem 0.2rem;
+
+  width: 30%;
+  height: 85%;
+  background: none;
+  border:1.2px solid #8B95AA;
+
+  
+  font-family: "Sigmar", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color:#55DB38AB;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  right: 14px;
+  font-size: 20px;
+  padding:8px;
+  box-shadow: 0.009rem 0.009rem 0.22rem 0.001rem #00000024,-0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+
+}
+
+.shadow{
+  width: 98%;
+  height: 90%;
+  
+  background:#000000;
+  border-radius: 0.7rem;
+  box-shadow: inset 0.009rem 0.009rem 0.22rem 0.001rem #00000024,inset -0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow3{
+   width: 96%;
+   height: 88.9%;
+   box-shadow: inset 0.009rem 0.009rem 0.22rem 0.001rem #00000024,inset -0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+  border-radius: 0.45rem 0.45rem 0.45rem 0.45rem;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.shadow4{
+  width: 94%;
+   height: 88.9%;
+   box-shadow: inset 0.009rem 0.009rem 0.22rem 0.001rem #00000024,inset -0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+  border-radius: 0.45rem 0.2rem 0.45rem 0.45rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.shadow5{
+  width: 94%;
+   height: 88.9%;
+   box-shadow: inset 0.009rem 0.009rem 0.22rem 0.001rem #00000024,inset -0.009rem -0.009rem 0.22rem -0.001rem #00000026;
+  border-radius: 0.45rem 0.45rem 0.45rem 0.45rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+img{
+  width: 30px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <button class="btn"><div class="shadow">JS GALLERY</div></button>
+    </div>
+
+    <div class="body">
+      
+    </div>
+
+  </div>
+  <!-- Project -->
+  <script>
+    /*let body = document.querySelector('.body')
+
+let btn = document.querySelector('.btn')
+let URL = [
+  { url: "/AQM_5gr6mTOWM9GPUV9nfz3LMZgO_Hae33GhXr5BkGUdM21AC4QDttY4amCDES_VNhzEXYGEP3fmk0PoZhge6bdh.mp4", title: "Video 1", description: "This is the first video." },
+  { url: "/VIDEO /episode2.mp4", title: "Video 2", description: "This is the second video." },
+  { url: "/VIDEO /episode3.mp4", title: "Video 3", description: "This is the third video." },
+  { url: "/VIDEO /episode4.mp4", title: "Video 4", description: "This is the fourth video." },
+  { url: "/VIDEO /episode5.mp4", title: "Video 5", description: "This is the fourth video." },
+  { url: "/VIDEO /episode6.mp4", title: "Video 6", description: "This is the fourth video." },
+  { url: "/VIDEO /episode7.mp4", title: "Video 7", description: "This is the fourth video." },
+  { url: "/VIDEO /episode8.mp4", title: "Video 8", description: "This is the fourth video." },
+  { url: "/VIDEO /episode9.mp4", title: "Video 9", description: "This is the fourth video." },
+  { url: "/VIDEO /episode10.mp4", title: "Video 10", description: "This is the fourth video." },
+  { url: "/VIDEO /episode11.mp4", title: "Video 11", description: "This is the fourth video." },
+  { url: "/VIDEO /episode12.mp4", title: "Video 12", description: "This is the fourth video." },
+  { url: "/VIDEO /episode13.mp4", title: "Video 13", description: "This is the fourth video." },
+  { url: "/VIDEO /episode14.mp4", title: "Video 14", description: "This is the fourth video." },
+  { url: "/VIDEO /episode15.mp4", title: "Video 15", description: "This is the fourth video." },
+  { url: "/VIDEO /episode16.mp4", title: "Video 16", description: "This is the fourth video." },
+  { url: "/VIDEO /episode17.mp4", title: "Video 17", description: "This is the fourth video." },
+  { url: "/VIDEO /episode18.mp4", title: "Video 18", description: "This is the fourth video." },
+  { url: "/VIDEO /episode19.mp4", title: "Video 19", description: "This is the fourth video." },
+  { url: "/VIDEO /episode20.mp4", title: "Video 20", description: "This is the fourth video." },
+  { url: "/VIDEO /episode21.mp4", title: "Video 21", description: "This is the fourth video." },
+  { url: "/VIDEO /episode22.mp4", title: "Video 22", description: "This is the fourth video." },
+  { url: "/VIDEO /episode23.mp4", title: "Video 23", description: "This is the fourth video." },
+  { url: "/VIDEO /episode24.mp4", title: "Video 24", description: "This is the fourth video." },
+  { url: "/VIDEO /episode25.mp4", title: "Video 25", description: "This is the fourth video." },
+  { url: "/VIDEO /episode26.mp4", title: "Video 26", description: "This is the fourth video." },
+  { url: "/VIDEO /episode27.mp4", title: "Video 27", description: "This is the fourth video." },
+  { url: "/VIDEO /episode28.mp4", title: "Video 28", description: "This is the fourth video." },
+  { url: "/VIDEO /episode29.mp4", title: "Video 29", description: "This is the fourth video." },
+  { url: "/VIDEO /episode30.mp4", title: "Video 30", description: "This is the fourth video." },
+  { url: "/VIDEO /episode31.mp4", title: "Video 31", description: "This is the fourth video." },
+  { url: "/VIDEO /episode32.mp4", title: "Video 32", description: "This is the fourth video." },
+  { url: "/VIDEO /episode33.mp4", title: "Video 33", description: "This is the fourth video." },
+  { url: "/VIDEO /episode34.mp4", title: "Video 34", description: "This is the fourth video." },
+  { url: "/VIDEO /episode35.mp4", title: "Video 35", description: "This is the fourth video." },
+  { url: "/VIDEO /episode36.mp4", title: "Video 36", description: "This is the fourth video." },
+  { url: "/VIDEO /episode37.mp4", title: "Video 37", description: "This is the fourth video." },
+  { url: "/VIDEO /episode38.mp4", title: "Video 38", description: "This is the fourth video." },
+  { url: "/VIDEO /episode39.mp4", title: "Video 39", description: "This is the fourth video." },
+  { url: "/VIDEO /episode40.mp4", title: "Video 40", description: "This is the fourth video." },
+  { url: "/VIDEO /episode1.mp4", title: "Video 33", description: "This is the fourth video." }
+
+        ];
+let index = 0
+
+btn.addEventListener('click', () => {
+  if (index < URL.length) {
+    let div = document.createElement('div');
+    //let body = document.querySelector('.body')
+    div.className = 'video'
+
+
+    div.innerHTML = `   
+            <video  muted src='${URL[index].url}'poster='/images.jpeg'>
+              
+            </video>
+           <div class="title">
+           <p>
+            ${URL[index].title}
+           </p>
+           <div class='icon' >
+         <i class="fa-solid fa-volume-xmark icon"></i>
+           </div>
+           <button class='btn2'>
+             Contols
+           </button>
+
+      </div>
+
+
+                `;
+
+    body.appendChild(div);
+
+    index++; // Next video ke liye index badhao
+  } else {
+    alert("Saare videos add ho chuke hain!");
+  }
+  const videos = document.querySelectorAll("video");
+  videos.forEach(video => {
+    video.addEventListener('click', () => {
+      videos.forEach(v => {
+        if (v !== video) {
+          v.pause()
+        }
+      })
+      if (video.paused) {
+        video.play();
+        video.muted = true
+      } else {
+        video.pause();
+      }
+
+
+    })
+  })
+
+  const toggleButton = document.querySelector('.icon')
+  let isMuted = true; // Initial state
+
+  toggleButton.addEventListener("click", function() {
+    isMuted = !isMuted; // Toggle muted state
+
+    videos.forEach(video => {
+      if (isMuted) {
+        video.muted = true; // Mute videos
+        video.volume = '0';
+        toggleButton.innerHTML = `<i class="fa-solid fa-volume-xmark icon"></i>`
+
+      } else {
+        video.muted = false; // Unmute videos
+        video.volume = '0.009';
+
+        toggleButton.innerHTML = `<i class="fa-solid fa-volume-low icon"></i>`
+
+      }
+    });
+  });
+  
+  
+let btn2 = document.querySelectorAll('.btn2')
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('btn2')) {
+    let video = event.target.closest('.video').querySelector('video');
+
+    // Toggle controls
+    video.controls = !video.controls;
+
+    // Button text update karo
+    event.target.textContent = video.controls ? 'Hide Controls' : 'Show Controls';
+  }
+});
+
+
+
+
+
+
+})*/
+let body = document.querySelector('.body');
+let btn = document.querySelector('.btn');
+
+ /* let URL = [
+  { url: "/AQM_5gr6mTOWM9GPUV9nfz3LMZgO_Hae33GhXr5BkGUdM21AC4QDttY4amCDES_VNhzEXYGEP3fmk0PoZhge6bdh.mp4", title: "Video 1" },
+  { url: "/VIDEO/episode2.mp4", title: "Video 2" },
+  { url: "/VIDEO/episode3.mp4", title: "Video 3" },
+  { url: "/VIDEO/episode4.mp4", title: "Video 4" },
+  { url: "/VIDEO/episode5.mp4", title: "Video 5" }
+];*/
+let URL = [
+  { url: "/AQM_5gr6mTOWM9GPUV9nfz3LMZgO_Hae33GhXr5BkGUdM21AC4QDttY4amCDES_VNhzEXYGEP3fmk0PoZhge6bdh.mp4", title: "Video 1", description: "This is the first video." },
+  { url: "/VIDEO /episode2.mp4", title: "Video 2", description: "This is the second video." },
+  { url: "/VIDEO /episode3.mp4", title: "Video 3", description: "This is the third video." },
+  { url: "/VIDEO /episode4.mp4", title: "Video 4", description: "This is the fourth video." },
+  { url: "/VIDEO /episode5.mp4", title: "Video 5", description: "This is the fourth video." },
+  { url: "/VIDEO /episode6.mp4", title: "Video 6", description: "This is the fourth video." },
+  { url: "/VIDEO /episode7.mp4", title: "Video 7", description: "This is the fourth video." },
+  { url: "/VIDEO /episode8.mp4", title: "Video 8", description: "This is the fourth video." },
+  { url: "/VIDEO /episode9.mp4", title: "Video 9", description: "This is the fourth video." },
+  { url: "/VIDEO /episode10.mp4", title: "Video 10", description: "This is the fourth video." },
+  { url: "/VIDEO /episode11.mp4", title: "Video 11", description: "This is the fourth video." },
+  { url: "/VIDEO /episode12.mp4", title: "Video 12", description: "This is the fourth video." },
+  { url: "/VIDEO /episode13.mp4", title: "Video 13", description: "This is the fourth video." },
+  { url: "/VIDEO /episode14.mp4", title: "Video 14", description: "This is the fourth video." },
+  { url: "/VIDEO /episode15.mp4", title: "Video 15", description: "This is the fourth video." },
+  { url: "/VIDEO /episode16.mp4", title: "Video 16", description: "This is the fourth video." },
+  { url: "/VIDEO /episode17.mp4", title: "Video 17", description: "This is the fourth video." },
+  { url: "/VIDEO /episode18.mp4", title: "Video 18", description: "This is the fourth video." },
+  { url: "/VIDEO /episode19.mp4", title: "Video 19", description: "This is the fourth video." },
+  { url: "/VIDEO /episode20.mp4", title: "Video 20", description: "This is the fourth video." },
+  { url: "/VIDEO /episode21.mp4", title: "Video 21", description: "This is the fourth video." },
+  { url: "/VIDEO /episode22.mp4", title: "Video 22", description: "This is the fourth video." },
+  { url: "/VIDEO /episode23.mp4", title: "Video 23", description: "This is the fourth video." },
+  { url: "/VIDEO /episode24.mp4", title: "Video 24", description: "This is the fourth video." },
+  { url: "/VIDEO /episode25.mp4", title: "Video 25", description: "This is the fourth video." },
+  { url: "/VIDEO /episode26.mp4", title: "Video 26", description: "This is the fourth video." },
+  { url: "/VIDEO /episode27.mp4", title: "Video 27", description: "This is the fourth video." },
+  { url: "/VIDEO /episode28.mp4", title: "Video 28", description: "This is the fourth video." },
+  { url: "/VIDEO /episode29.mp4", title: "Video 29", description: "This is the fourth video." },
+  { url: "/VIDEO /episode30.mp4", title: "Video 30", description: "This is the fourth video." },
+  { url: "/VIDEO /episode31.mp4", title: "Video 31", description: "This is the fourth video." },
+  { url: "/VIDEO /episode32.mp4", title: "Video 32", description: "This is the fourth video." },
+  { url: "/VIDEO /episode33.mp4", title: "Video 33", description: "This is the fourth video." },
+  { url: "/VIDEO /episode34.mp4", title: "Video 34", description: "This is the fourth video." },
+  { url: "/VIDEO /episode35.mp4", title: "Video 35", description: "This is the fourth video." },
+  { url: "/VIDEO /episode36.mp4", title: "Video 36", description: "This is the fourth video." },
+  { url: "/VIDEO /episode37.mp4", title: "Video 37", description: "This is the fourth video." },
+  { url: "/VIDEO /episode38.mp4", title: "Video 38", description: "This is the fourth video." },
+  { url: "/VIDEO /episode39.mp4", title: "Video 39", description: "This is the fourth video." },
+  { url: "/VIDEO /episode40.mp4", title: "Video 40", description: "This is the fourth video." },
+  { url: "/VIDEO /episode1.mp4", title: "Video 41", description: "This is the fourth video." }
+
+        ];
+
+
+let index = 0;
+
+btn.addEventListener('click', () => {
+  if (index < URL.length) {
+    let div = document.createElement('div');
+    div.className = 'video';
+
+    div.innerHTML = `
+      <video muted src='${URL[index].url}' poster='/VIDEO /canva-red-and-yellow-vibrant-modern-retro-youtube-thumbnail-JkO-wjc1ONI.jpg'></video>
+      <div class="title">
+      <div class="t">
+      
+        <p>${URL[index].title}</p>
+      
+      </div>
+        <div class='icon'>
+        <img src="/images__1_-removebg-preview.png">
+
+
+         
+         
+        </div>
+        <button class='btn2'>
+        <img src="/IMG_20250227_145526_605-removebg-preview.png">
+        </button>
+         
+
+  </div>
+ 
+
+
+      </div>
+    `;
+
+    body.appendChild(div);
+    index++; // Next video ke liye index badhao
+
+    // Naye added videos ka event listener set karo
+    updateEventListeners();
+  } else {
+    alert("Saare videos add ho chuke hain!");
+  }
+});
+
+// Function to update event listeners for videos
+function updateEventListeners() {
+  const videos = document.querySelectorAll("video");
+  const icons = document.querySelectorAll('.icon');
+  const btn2s = document.querySelectorAll('.btn2');
+
+  // Click pe ek hi video chalega, baaki pause honge
+  videos.forEach(video => {
+    video.addEventListener('click', () => {
+      videos.forEach(v => {
+        if (v !== video) {
+          v.pause();
+        }
+      });
+
+      if (video.paused) {
+        video.play();
+        video.muted = true;
+      } else {
+        video.pause();
+      }
+    });
+  });
+
+  // Mute/unmute functionality
+  icons.forEach((icon, i) => {
+    let isMuted = true;
+    icon.addEventListener("click", function () {
+      isMuted = !isMuted;
+      videos[i].muted = isMuted;
+      videos[i].volume = isMuted ? 0 : 0.009;
+      icon.innerHTML = isMuted
+        ? `<img src="/images__1_-removebg-preview.png">
+        `
+        : `<img src="/2202518.png">
+        `;
+    });
+  });
+
+  // Controls toggle functionality
+  btn2s.forEach((btn, i) => {
+    btn.addEventListener("click", function () {
+      videos[i].controls = !videos[i].controls;
+      
+      btn.innerHTML = videos[i].controls ? `<img src='/images__4_-removebg-preview.png'>` : `<img src='/IMG_20250227_145526_605-removebg-preview.png'>` ;
+    });
+  });
+}
+
+  </script>
+</body>
+
+</html>
